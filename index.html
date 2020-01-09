@@ -32,6 +32,16 @@
     <link href="css/magnific-popup.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
 
+    <!-- Email JS script, needs to be in the <head> to work -->
+    <!-- EmailJS Script for Contact Form -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_a20oZmpNd5WwAia1HV7NH");
+        })();
+    </script>
+
     <!-- Favicon  -->
     <link rel="icon" href="favicon-32x32.png">
 </head>
@@ -71,7 +81,10 @@
                     <a class="nav-link page-scroll" href="#header">HOME <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#intro">ABOUT</a>
+                    <a class="nav-link page-scroll" href="#about">ABOUT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="#do-i-need">DO I NEED A TMP?</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="#services">SERVICES</a>
@@ -79,10 +92,6 @@
                 <!-- <li class="nav-item">
                     <a class="nav-link page-scroll" href="#callMe">CONTACT US</a>
                 </li> -->
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="#do-i-need">DO I NEED A TMP?</a>
-                </li>
-
                 <!-- Dropdown Menu -->
                 <!-- <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle page-scroll" href="#about" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">ABOUT</a>
@@ -132,9 +141,11 @@
                                         CONNECTIONS,
                                         TRUCK ACCESS TO SITE, FOOTPATH CONSTRUCTION, MANHOLE INSTALLS, SHOP FRONT WORKS,
                                         WINDOW REPAIRS, FENCE CONSTRUCTION, SURVEYING, NEW DEVELOPMENTS </span></h1>
-                                <p class="p-heading p-large">Need a TMP designed and submitted to Council FAST ? <br>Get in
-                                    touch with us right now. </p>
-                                <a class="btn-solid-lg page-scroll" href="#intro">FIND OUT MORE</a>
+                                <p class="p-heading p-large">Need a TMP designed and submitted to Council FAST ? <br>Get
+                                    in
+                                    touch with us right now.</p>
+                                <a class="btn-solid-lg page-scroll" href="#about">FIND OUT MORE</a>
+                                <p class="p-heading p-large">Servicing the Auckland area and surrounding Councils</p>
                             </div>
                         </div> <!-- end of col -->
                     </div> <!-- end of row -->
@@ -145,8 +156,8 @@
     <!-- end of header -->
 
 
-    <!-- Intro -->
-    <div id="intro" class="basic-1">
+    <!-- About -->
+    <div id="about" class="basic-1">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5">
@@ -173,7 +184,61 @@
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of basic-1 -->
-    <!-- end of intro -->
+    <!-- end of about -->
+
+    <!-- 'do i need a TMP' -->
+    <div id="do-i-need" class="basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>Do you need a TMP for your upcoming works / event ? </h2>
+                </div>
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <div class="section-title"></div>
+                        <p>If you are planning to carry out any work or activity that affects the normal operation of
+                            the road, footpath or berm, you must submit a Corridor Access Request (CAR) or
+                            Non-Excavation Corridor Access Request (NECAR) before you start. CARs ensure that all work
+                            is done safely and complies with national regulations.</p>
+                        <ul>
+                            <li>
+                                If you are planning to dig in the road, footpath or berm, a Corridor Access Request
+                                (CAR) must be applied for, before you start;
+                            </li>
+                            <li>
+                                If you are planning work or an activity that affects the normal operation of the road,
+                                footpath or berm, a Non-Excavation Corridor Access Request (NECAR) may need to be
+                                submitted.
+                            </li>
+                        </ul>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <div class="section-title"></div>
+                        <p>Unless the works are an emergency, you will need to submit a TMP for any activity that varies
+                            the normal operating conditions of any part of the road corridor (road, footpath or berm).
+                            For example, if the work will prevent:</p>
+                        <ul>
+                            <li>
+                                Normal use of a vehicle driving or parking lane;
+                            </li>
+                            <li>
+                                Normal pedestrian access along a footpath.
+                            </li>
+                        </ul>
+                        <p>All Corridor Access Requests (CARs) must be accompanied by a TMP.<br>A TMP is sometimes
+                            required for activities being done on private property if vehicle access
+                            is needed for a long period of time, eg. at a building site.<br>Your TMP must be approved by
+                            the Road Controlling Authority (eg. Auckland Transport) before you can start any activity.
+                        </p>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-1 -->
+    <!-- end of 'do i need a TMP' -->
+
 
 
     <!-- Description -->
@@ -182,7 +247,7 @@
             <div class="row">
                 <div class="col-lg-12">
 
-                    <!-- Card -->
+                    <!-- Card - Civil Eng Background -->
                     <div class="card">
                         <span class="fa-stack">
                             <span class="hexagon"></span>
@@ -190,7 +255,8 @@
                         </span>
                         <div class="card-body">
                             <h3 class="card-title">Civil Engineering Background</h3>
-                            <p>David has a BEng in Civil & Transport Engineering from Napier University, Edinburgh. He
+                            <p>David has a BEng (Hons) in Civil & Transport Engineering from Napier University,
+                                Edinburgh. He
                                 also has spent time working in Engineering Design Offices in Ireland, and as an Engineer
                                 in Local Councils in Melbourne, Australia. Through this experience, David can offer
                                 sound advice on the required Temporary Traffic Management (TTM) that is required for
@@ -199,7 +265,7 @@
                     </div>
                     <!-- end of card -->
 
-                    <!-- Card -->
+                    <!-- Card - Rapid Turnaround -->
                     <div class="card">
                         <span class="fa-stack">
                             <span class="hexagon"></span>
@@ -214,7 +280,7 @@
                     </div>
                     <!-- end of card -->
 
-                    <!-- Card -->
+                    <!-- Card - TTM Industy Network -->
                     <div class="card">
                         <span class="fa-stack">
                             <span class="hexagon"></span>
@@ -412,7 +478,10 @@
                                     <div class="card">
                                         <img class="card-image" src="images/testimonial-4.jpg" alt="alternative">
                                         <div class="card-body">
-                                            <div class="testimonial-text">David provides a great service. He keeps you up to date with the whole approval process, lets you know if more info is required to get the TMP approved and has good working relationships with the approval managers at Auckland Transport.</div>
+                                            <div class="testimonial-text">David provides a great service. He keeps you
+                                                up to date with the whole approval process, lets you know if more info
+                                                is required to get the TMP approved and has good working relationships
+                                                with the approval managers at Auckland Transport.</div>
                                             <div class="testimonial-author">Deepak Garg - DG NZ LTD.</div>
                                         </div>
                                     </div>
@@ -470,7 +539,7 @@
     <!-- end of testimonials -->
 
 
-    <!-- Team -->
+    <!-- Team - David & Debs -->
     <div class="basic-2">
         <div class="container">
             <div class="row">
@@ -524,7 +593,7 @@
     </div> <!-- end of basic-2 -->
     <!-- end of team -->
 
-    <!-- Contact -->
+    <!-- Contact Email & Form -->
     <div id="contact" class="form-2">
         <div class="container">
             <div class="row">
@@ -556,20 +625,33 @@
                 <div class="col-lg-6">
 
                     <!-- Contact Form -->
-                    <form id="contactForm" data-toggle="validator" data-focus="false">
+                    <form onsubmit="return sendMail(this);" method="POST" name="contact_form" id="contact_form">
                         <div class="form-group">
-                            <input type="text" class="form-control-input" id="cname" required>
-                            <label class="label-control" for="cname">Name</label>
+                            <input type="text" class="form-control-input" id="full_name" name="full_name" required>
+                            <label class="label-control" for="full_name">Full Name</label>
                             <div class="help-block with-errors"></div>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control-input" id="cemail" required>
-                            <label class="label-control" for="cemail">Email</label>
+                            <input type="email" class="form-control-input" id="emailaddress" name="emailaddress"
+                                required>
+                            <label class="label-control" for="emailaddress">Email Address</label>
                             <div class="help-block with-errors"></div>
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control-textarea" id="cmessage" required></textarea>
-                            <label class="label-control" for="cmessage">Your message</label>
+                            <label class="label-control" for="custom-select"></label>
+                            <select class="custom-select" id="nature_of_enquiry" name="nature_of_enquiry" required>
+                                <option value="">Select from Dropdown List</option>
+                                <option value="General Enquiry">General Enquiry</option>
+                                <option value="I need a TMP ONLY">I need a TMP ONLY</option>
+                                <option value="I need a TMP & CAR submitted on my behalf ASAP!">I need a TMP & CAR
+                                    submitted on my behalf ASAP!
+                                </option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control-textarea" id="message" name="message" rows="6"
+                                required></textarea>
+                            <label class="label-control" for="message">Your message</label>
                             <div class="help-block with-errors"></div>
                         </div>
                         <div class="form-group checkbox">
@@ -579,17 +661,37 @@
                         <div class="form-group">
                             <button type="submit" class="form-control-submit-button">SUBMIT MESSAGE</button>
                         </div>
-                        <div class="form-message">
+                        <!-- <div class="form-message">
                             <div id="cmsgSubmit" class="h3 text-center hidden"></div>
-                        </div>
+                        </div> -->
                     </form>
                     <!-- end of contact form -->
-
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
     </div> <!-- end of form-2 -->
     <!-- end of contact -->
+
+    <!-- Modal feedback to User after "Send Message" button is hit -->
+    <div class="modal fade" id="modalMessage" tabindex="-1" role="dialog" aria-labelledby="modalMessageLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalMessageLabel">Haydal TMP's</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Your message was sent successfully!<br>We will be in touch shortly.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="form-control-submit-button" data-dismiss="modal">CLOSE</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- Footer -->
@@ -680,7 +782,7 @@
     <!-- end of footer -->
 
 
-    <!-- Copyright -->
+    <!-- Copyright, The web lab, etc -->
     <div class="copyright">
         <div class="container">
             <div class="row">
@@ -708,6 +810,9 @@
     <script src="js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
     <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
+
+    <script src="js\sendEmail.js"></script> <!-- Custom EmailJS file -->
+
 </body>
 
 </html>
